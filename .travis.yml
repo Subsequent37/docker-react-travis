@@ -9,7 +9,7 @@ script:
    - docker run -e CI=true littlepenguin/docker-react-travis  npm run test 
 
 deploy:
-   - provider: elasticbeanstalk
+   provider: elasticbeanstalk
    region: "us-east-2" 
    app: "Udemy Section 7"
    env: "UdemySection7-env:
