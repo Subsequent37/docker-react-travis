@@ -7,3 +7,19 @@ before_install:
 
 script:
    - docker run -e CI=true littlepenguin/docker-react-travis  npm run test 
+
+deploy:
+   - provider: elasticbeanstalk
+   region: "us-east-2" 
+   app: "Udemy Section 7"
+   env: "UdemySection7-env:
+   bucket_name: "elasticbeanstalk-us-east-2-743978757333"
+   bucket_path: "Udemy Section 7"
+   on:
+      branch: main
+   access_key_id: $AWS_ACCESS_KEY
+   secret_access_key" "$AWS_SECRET_KEY"
+
+
+
+#udemysection7-env.eba-fvssyvpn.us-east-2.elasticbeanstalk.com
