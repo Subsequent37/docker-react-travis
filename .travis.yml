@@ -12,7 +12,7 @@ deploy:
    provider: elasticbeanstalk
    region: "us-east-2"
    app: "UdemyTravisTest"
-   env: "UdemTravisTest-env"
+   env: "UdemyTravisTest-env"
    bucket_name: "elasticbeanstalk-us-east-2-743978757333"
    bucket_path: "UdemyTravisTest"
    on:
