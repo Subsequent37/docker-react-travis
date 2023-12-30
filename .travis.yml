@@ -11,10 +11,10 @@ script:
 deploy:
    provider: elasticbeanstalk
    region: "us-east-2"
-   app: "Udemy Section 7"
-   env: "UdemySection7-env"
+   app: "UdemyTravisTest"
+   env: "UdemTravisTest-env"
    bucket_name: "elasticbeanstalk-us-east-2-743978757333"
-   bucket_path: "Udemy Section 7"
+   bucket_path: "UdemyTravisTest"
    on:
       branch: main
    access_key_id: "$AWS_ACCESS_KEY"
